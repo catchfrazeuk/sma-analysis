@@ -1,0 +1,40 @@
+:root {
+  --color-primary: #E91E63;
+  --color-accent: #FF4081;
+  --color-dark-bg: #0A0E27;
+  --color-dark-secondary: #1A1F3A;
+  --color-dark-tertiary: #2A3050;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #B0B8C8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background: var(--color-dark-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+input[type='range'] {
+  cursor: pointer;
+}

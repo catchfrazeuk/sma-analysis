@@ -1,0 +1,14 @@
+.waveform-container {
+  padding: 20px;
+  background: var(--color-dark-secondary);
+  border-bottom: 1px solid var(--color-dark-tertiary);
+}
+
+.waveform-canvas {
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+  background: var(--color-dark-bg);
+  border: 1px solid var(--color-dark-tertiary);
+  cursor: pointer;
+}

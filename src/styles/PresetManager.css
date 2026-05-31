@@ -1,0 +1,109 @@
+.preset-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.preset-save {
+  display: flex;
+  gap: 12px;
+  background: var(--color-dark-secondary);
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--color-dark-tertiary);
+}
+
+.preset-input {
+  flex: 1;
+  padding: 10px 12px;
+  background: var(--color-dark-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-dark-tertiary);
+  border-radius: 4px;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.preset-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.2);
+}
+
+.preset-btn {
+  padding: 10px 20px;
+  background: var(--color-dark-tertiary);
+  color: var(--color-text);
+  border: 1px solid var(--color-dark-tertiary);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.preset-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.preset-btn.primary {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.preset-btn.primary:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.preset-btn.delete {
+  padding: 8px 12px;
+}
+
+.preset-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--color-dark-secondary);
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--color-dark-tertiary);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.no-presets {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  padding: 20px;
+}
+
+.preset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: var(--color-dark-bg);
+  border-radius: 4px;
+  border: 1px solid var(--color-dark-tertiary);
+  transition: all 0.2s ease;
+}
+
+.preset-item:hover {
+  border-color: var(--color-primary);
+  background: rgba(233, 30, 99, 0.05);
+}
+
+.preset-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.preset-actions {
+  display: flex;
+  gap: 8px;
+}
