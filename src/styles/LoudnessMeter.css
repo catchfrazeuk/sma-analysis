@@ -1,0 +1,87 @@
+.loudness-meter {
+  background: var(--color-dark-secondary);
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--color-dark-tertiary);
+  margin-bottom: 20px;
+}
+
+.loudness-meter h3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.meters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.meter-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.meter-item label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  min-width: 80px;
+  text-align: right;
+}
+
+.meter-bar-container {
+  flex: 1;
+  height: 20px;
+  background: var(--color-dark-bg);
+  border: 1px solid var(--color-dark-tertiary);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-bar-fill {
+  height: 100%;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
+}
+
+.meter-value {
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  color: var(--color-text-secondary);
+  min-width: 60px;
+  text-align: right;
+}
+
+.metrics-display {
+  display: flex;
+  gap: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-dark-tertiary);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric span {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric strong {
+  font-size: 14px;
+  color: var(--color-primary);
+  font-family: 'Courier New', monospace;
+}
